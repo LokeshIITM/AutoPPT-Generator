@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Auto PPT Generator
 
 This is a web app that allows users to upload a PowerPoint template, input text, and generate a new PowerPoint presentation using their input.
@@ -32,3 +33,7 @@ This is a web app that allows users to upload a PowerPoint template, input text,
     ```
 
 6. Open the web app at `http://127.0.0.1:5000/` in your browser.
+=======
+# AutoPPT-Generator
+AutoPPT-Generator
+>>>>>>> 36b86a23d2e90d7f36cd089079f59980aa922040

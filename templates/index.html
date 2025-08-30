@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto PPT Generator</title>
+</head>
+<body>
+    <h1>Auto PPT Generator</h1>
+
+    <!-- Form to collect input text and API key -->
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="text">Input Text:</label><br>
+        <textarea id="text" name="text" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="api_key">API Key:</label><br>
+        <input type="text" id="api_key" name="api_key" required><br><br>
+
+        <label for="ppt_template">Upload PPT Template:</label><br>
+        <input type="file" id="ppt_template" name="ppt_template" accept=".pptx,.potx"><br><br>
+
+        <input type="submit" value="Generate PPT">
+    </form>
+
+    <!-- Display success message and download link once PPT is generated -->
+    {% if file %}
+        <h2>PPT generated successfully!</h2>
+        <a href="{{ url_for('download_file', filename=file) }}" download>Click here to download the PowerPoint</a>
+    {% endif %}
+</body>
+</html>

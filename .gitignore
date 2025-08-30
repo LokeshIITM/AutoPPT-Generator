@@ -1,0 +1,13 @@
+# Python virtual environment
+venv/
+
+# IDE files (for VS Code)
+.vscode/
+
+# OS-specific files
+__pycache__/
+*.pyc
+
+# Flask-related files
+instance/
+.webassets-cache
